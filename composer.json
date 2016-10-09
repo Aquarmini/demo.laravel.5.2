@@ -10,8 +10,9 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
-        "limingxinleo/laravel-commands": "dev-master",
-        "phpoffice/phpexcel": "^1.8"
+        "limingxinleo/laravel-commands": "^1.1.2",
+        "phpoffice/phpexcel": "^1.8",
+        "limingxinleo/limx-geetest": "^1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

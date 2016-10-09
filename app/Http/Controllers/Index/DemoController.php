@@ -85,4 +85,9 @@ class DemoController extends Controller
         $objWriter->save('php://output');
     }
 
+    public function getGeetest()
+    {
+        return view('index.demo.geetest');
+    }
+
 }
