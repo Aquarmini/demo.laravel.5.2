@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Ajax;
 
 class DemoController extends Controller
 {
@@ -87,7 +88,35 @@ class DemoController extends Controller
 
     public function getGeetest()
     {
-        return view('index.demo.geetest');
+        $GtSdk = new \limx\tools\GeetestLib('d302b753264fec3232d348bec90eaa12', '413fa78d6a3e91c664ec4aa17db183d3');
+        $user_id = "test";
+        $status = $GtSdk->pre_process($user_id);
+        session(['gtserver' => $status]);
+        session(['user_id' => $user_id]);
+
+        $data['geetest'] = json_decode($GtSdk->get_response_str(), true);
+        return view('index.demo.geetest', $data);
+    }
+
+    public function postGeetest()
+    {
+        $GtSdk = new \limx\tools\GeetestLib('d302b753264fec3232d348bec90eaa12', '413fa78d6a3e91c664ec4aa17db183d3');
+
+        $user_id = session('user_id');
+        if (session('gtserver') == 1) {   //服务器正常
+            $result = $GtSdk->success_validate($_POST['geetest_challenge'], $_POST['geetest_validate'], $_POST['geetest_seccode'], $user_id);
+            if ($result) {
+                return Ajax::success(['gtserver' => 1]);
+            } else {
+                return Ajax::error();
+            }
+        } else {  //服务器宕机,走failback模式
+            if ($GtSdk->fail_validate($_POST['geetest_challenge'], $_POST['geetest_validate'], $_POST['geetest_seccode'])) {
+                return Ajax::success(['gtserver' => 0]);
+            } else {
+                return Ajax::error();
+            }
+        }
     }
 
 }

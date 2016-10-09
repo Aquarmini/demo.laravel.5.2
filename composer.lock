@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "423b9d2179f495672adc48ab545c5be0",
-    "content-hash": "84507098854ba8212b17d12d37ef1a90",
+    "hash": "cb1c93ae2b18bc4b8eb123a9a5a5fec0",
+    "content-hash": "5da5212b64d37595043c0114c784fca5",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -521,7 +521,7 @@
         },
         {
             "name": "limingxinleo/laravel-commands",
-            "version": "dev-master",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/limingxinleo/laravel-commands.git",
@@ -582,6 +582,36 @@
             ],
             "description": "there are some functions",
             "time": "2016-09-05 04:05:52"
+        },
+        {
+            "name": "limingxinleo/limx-geetest",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/limingxinleo/limx-geetest.git",
+                "reference": "efb4eb1863a68032e2aac44d5b8ef3e30e3941ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/limingxinleo/limx-geetest/zipball/efb4eb1863a68032e2aac44d5b8ef3e30e3941ad",
+                "reference": "efb4eb1863a68032e2aac44d5b8ef3e30e3941ad",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "limx\\tools\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "This is a geetest sdk",
+            "time": "2016-10-09 09:30:29"
         },
         {
             "name": "monolog/monolog",
@@ -3276,9 +3306,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "limingxinleo/laravel-commands": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
