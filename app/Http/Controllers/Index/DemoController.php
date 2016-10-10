@@ -88,7 +88,7 @@ class DemoController extends Controller
 
     public function getGeetest()
     {
-        $GtSdk = new \limx\tools\GeetestLib('d302b753264fec3232d348bec90eaa12', '413fa78d6a3e91c664ec4aa17db183d3');
+        $GtSdk = new \limx\tools\GeetestLib(env('GEETEST_ID'), env('GEETEST_KEY'));
         $user_id = "test";
         $status = $GtSdk->pre_process($user_id);
         session(['gtserver' => $status]);
@@ -100,7 +100,7 @@ class DemoController extends Controller
 
     public function postGeetest()
     {
-        $GtSdk = new \limx\tools\GeetestLib('d302b753264fec3232d348bec90eaa12', '413fa78d6a3e91c664ec4aa17db183d3');
+        $GtSdk = new \limx\tools\GeetestLib(env('GEETEST_ID'), env('GEETEST_KEY'));
 
         $user_id = session('user_id');
         if (session('gtserver') == 1) {   //服务器正常
