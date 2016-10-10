@@ -179,4 +179,9 @@ class IndexController extends Controller
         echo phpinfo();
     }
 
+    public function getProvider()
+    {
+        echo 1;
+    }
+
 }
