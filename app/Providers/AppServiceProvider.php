@@ -23,7 +23,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('AjaxResponseService', function () {
+        $this->app->singleton(\App\Services\AjaxResponse::class, function () {
             return new \App\Services\AjaxResponse();
         });
     }
