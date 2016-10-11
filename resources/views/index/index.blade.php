@@ -49,6 +49,7 @@
             <a class="btn btn-default" href="/index/demo/sql">sql注入</a>
             <a class="btn btn-default" href="/index/demo/toexcel">导出EXCEL</a>
             <a class="btn btn-default" href="/index/demo/geetest">极验验证码</a>
+            <a class="btn btn-default" href="/index/demo/js">js引用</a>
         </div>
     </div>
 @endsection

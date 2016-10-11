@@ -119,4 +119,9 @@ class DemoController extends Controller
         }
     }
 
+    public function getJs()
+    {
+        return view('index.demo.js');
+    }
+
 }
