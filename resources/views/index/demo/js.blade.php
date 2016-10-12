@@ -50,5 +50,15 @@
             ++a;
             conLog(a);
         }
+
+
+//        var a = {"val": 1};
+//        console.log(a.val);
+//        test(a);
+//        console.log(a.val);
+//
+//        function test(a) {
+//            console.log(++a.val);
+//        }
     </script>
 @endsection
