@@ -121,6 +121,8 @@ class DemoController extends Controller
 
     public function getJs()
     {
+        $i = NULL;
+        dump($i . "abc");
         return view('index.demo.js');
     }
 
