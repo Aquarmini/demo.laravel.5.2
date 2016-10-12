@@ -50,6 +50,7 @@
             <a class="btn btn-default" href="/index/demo/toexcel">导出EXCEL</a>
             <a class="btn btn-default" href="/index/demo/geetest">极验验证码</a>
             <a class="btn btn-default" href="/index/demo/js">js引用</a>
+            <a class="btn btn-default" href="/index/demo/peity">peity</a>
         </div>
     </div>
 @endsection

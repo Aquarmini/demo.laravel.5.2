@@ -126,4 +126,9 @@ class DemoController extends Controller
         return view('index.demo.js');
     }
 
+    public function getPeity()
+    {
+        return view('index.demo.peity');
+    }
+
 }
