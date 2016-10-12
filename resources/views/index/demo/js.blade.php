@@ -31,9 +31,9 @@
             var a = {
                 "val": 1
             };
-            conLog(a);
+            conLog(a.val);
             bb(a);
-            conLog(a);
+            conLog(a.val);
 
             var b = 1;
             conLog(b);
@@ -43,7 +43,7 @@
 
         function bb(a) {
             ++a.val
-            conLog(a);
+            conLog(a.val);
         }
 
         function cc(a) {
