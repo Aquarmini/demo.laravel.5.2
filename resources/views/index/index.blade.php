@@ -51,6 +51,7 @@
             <a class="btn btn-default" href="/index/demo/geetest">极验验证码</a>
             <a class="btn btn-default" href="/index/demo/js">js引用</a>
             <a class="btn btn-default" href="/index/demo/peity">peity</a>
+            <a class="btn btn-default" href="/index/demo/zzfby">正则非捕获元</a>
         </div>
     </div>
 @endsection

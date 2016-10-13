@@ -129,4 +129,14 @@ class DemoController extends Controller
         return view('index.demo.peity');
     }
 
+    public function getZzfby()
+    {
+        $match = "/^http:\/\/(?:\w*).com\/$/";
+        preg_match_all($match, "http://baidu.com/", $res);
+        dump($res);
+        $match = "/^http:\/\/(\w*).com\/$/";
+        preg_match_all($match, "http://baidu.com/", $res);
+        dump($res);
+    }
+
 }
