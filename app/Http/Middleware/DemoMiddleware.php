@@ -17,7 +17,8 @@ class DemoMiddleware
     {
         $key = session('appKey');
         if ($key != '910123') {
-            return redirect('index');
+//            return redirect('index');
+            return redirect()->route('home');
         }
         return $next($request);
     }
