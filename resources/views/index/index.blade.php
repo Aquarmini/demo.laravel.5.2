@@ -52,6 +52,8 @@
             <a class="btn btn-default" href="/index/demo/js">js引用</a>
             <a class="btn btn-default" href="/index/demo/peity">peity</a>
             <a class="btn btn-default" href="/index/demo/zzfby">正则非捕获元</a>
+            <a class="btn btn-default" href="/index/demo/mypdo">测试MyPDO的事务</a>
+
         </div>
     </div>
 @endsection

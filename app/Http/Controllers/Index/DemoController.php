@@ -139,4 +139,12 @@ class DemoController extends Controller
         dump($res);
     }
 
+    public function getMypdo()
+    {
+        $pdo = \limx\tools\MyPDO::getInstance();
+        $sql = 'select * from test where id < ?;';
+        $res = $pdo->query($sql, [4]);
+        dump($res);
+    }
+
 }
