@@ -13,7 +13,8 @@
         "limingxinleo/laravel-commands": "^1.1.2",
         "phpoffice/phpexcel": "^1.8",
         "limingxinleo/limx-geetest": "^1.0",
-        "limingxinleo/limx-pdo": "^1.0"
+        "limingxinleo/limx-pdo": "^1.0",
+        "limingxinleo/limx-package": "^1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

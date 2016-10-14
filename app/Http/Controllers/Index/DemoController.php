@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Ajax;
+use Helper;
 
 class DemoController extends Controller
 {
@@ -141,10 +142,19 @@ class DemoController extends Controller
 
     public function getMypdo()
     {
-        $pdo = \limx\tools\MyPDO::getInstance();
-        $sql = 'select * from test where id < ?;';
+        $pdo = Helper::pdo();
+        $sql = 'select * from user where id < ?;';
         $res = $pdo->query($sql, [4]);
         dump($res);
+
+        $pdo->beginTransaction();
+        $sql = 'insert into user(username) values(?);';
+        $time = time();
+        $res = $pdo->execute($sql, [$time]);
+        dump($res);
+        $pdo->commit();
+//        $pdo->rollback();
+
     }
 
 }

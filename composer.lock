@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "aba67d06be3324ef11fc51a3dec018e7",
-    "content-hash": "cefc5cd8d20c1fe871b99973fcb5ceb3",
+    "hash": "fc16bd7a601238d14c544d04701774d8",
+    "content-hash": "4359aba2d973f4fb52b05aff21b0ce80",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -615,17 +615,48 @@
             "time": "2016-10-09 09:30:29"
         },
         {
-            "name": "limingxinleo/limx-pdo",
-            "version": "1.0.1",
+            "name": "limingxinleo/limx-package",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/limingxinleo/limx-pdo.git",
-                "reference": "542fe1391e582b7c7fbf92906ec22a53455f0229"
+                "url": "https://github.com/limingxinleo/limx-package.git",
+                "reference": "4f1089dabbd268f182ca7d6aca7f72aeb51064f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/limingxinleo/limx-pdo/zipball/542fe1391e582b7c7fbf92906ec22a53455f0229",
-                "reference": "542fe1391e582b7c7fbf92906ec22a53455f0229",
+                "url": "https://api.github.com/repos/limingxinleo/limx-package/zipball/4f1089dabbd268f182ca7d6aca7f72aeb51064f4",
+                "reference": "4f1089dabbd268f182ca7d6aca7f72aeb51064f4",
+                "shasum": ""
+            },
+            "require": {
+                "limingxinleo/limx-func": "~2.0.2",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "limx\\tools\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "This is a php package program",
+            "time": "2016-10-14 07:27:52"
+        },
+        {
+            "name": "limingxinleo/limx-pdo",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/limingxinleo/limx-pdo.git",
+                "reference": "3b7fde938fc2e6dc90e2eb7a8f467cd5ea0b9dfc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/limingxinleo/limx-pdo/zipball/3b7fde938fc2e6dc90e2eb7a8f467cd5ea0b9dfc",
+                "reference": "3b7fde938fc2e6dc90e2eb7a8f467cd5ea0b9dfc",
                 "shasum": ""
             },
             "require": {
@@ -642,7 +673,7 @@
                 "MIT"
             ],
             "description": "This is a pdo demo",
-            "time": "2016-08-21 10:27:30"
+            "time": "2016-10-14 05:25:41"
         },
         {
             "name": "monolog/monolog",
