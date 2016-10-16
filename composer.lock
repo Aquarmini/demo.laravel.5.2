@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fc16bd7a601238d14c544d04701774d8",
-    "content-hash": "4359aba2d973f4fb52b05aff21b0ce80",
+    "hash": "1a03405e6cfb1fa982428a8d3baec5ae",
+    "content-hash": "6d95a68a52f4ec3593e9544954f9aed7",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -674,6 +674,36 @@
             ],
             "description": "This is a pdo demo",
             "time": "2016-10-14 05:25:41"
+        },
+        {
+            "name": "limingxinleo/limx-redis",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/limingxinleo/limx-redis.git",
+                "reference": "0108775eedf2158329dd72118761072b176cbbb5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/limingxinleo/limx-redis/zipball/0108775eedf2158329dd72118761072b176cbbb5",
+                "reference": "0108775eedf2158329dd72118761072b176cbbb5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "limx\\tools\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "This is a redis demo",
+            "time": "2016-08-21 10:28:44"
         },
         {
             "name": "monolog/monolog",

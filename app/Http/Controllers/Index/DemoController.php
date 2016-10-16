@@ -157,4 +157,10 @@ class DemoController extends Controller
 
     }
 
+    public function getMyredis()
+    {
+        $redis = Helper::redis();
+        dump($redis->keys('*'));
+    }
+
 }
