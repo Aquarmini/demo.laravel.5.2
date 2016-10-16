@@ -48,6 +48,6 @@
 </html>
 <script>
     function toHtml() {
-        location = "{{route('index')}}";
+        location = "{{route('home')}}";
     }
 </script>
