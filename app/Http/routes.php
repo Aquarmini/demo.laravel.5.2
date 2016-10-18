@@ -26,3 +26,7 @@ Route::group(['namespace' => 'Index', 'prefix' => 'index'], function () {
     });
     Route::controller('relation', 'RelationController');
 });
+
+Route::group(['namespace' => 'Api', 'prefix' => 'api'], function () {
+    Route::get('jobs', 'IndexController@insJobTest');
+});

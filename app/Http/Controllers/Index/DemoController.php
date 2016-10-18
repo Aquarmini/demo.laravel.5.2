@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Index;
 
+use App\Models\JobsTestModel;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -160,7 +161,14 @@ class DemoController extends Controller
     public function getMyredis()
     {
         $redis = Helper::redis();
+        $redis->set('1111', 111);
         dump($redis->keys('*'));
+    }
+
+    public function getJobs()
+    {
+        $job = new JobsTestModel();
+        $res = $job->add();
     }
 
 }

@@ -54,7 +54,7 @@
             <a class="btn btn-default" href="/index/demo/zzfby">正则非捕获元</a>
             <a class="btn btn-default" href="/index/demo/mypdo">测试MyPDO的事务</a>
             <a class="btn btn-default" href="/index/demo/myredis">测试MyRedis</a>
-
+            <a class="btn btn-default" href="/index/demo/jobs">测试 Jobs</a>
         </div>
     </div>
 @endsection
