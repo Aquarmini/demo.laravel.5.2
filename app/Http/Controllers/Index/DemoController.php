@@ -9,6 +9,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Ajax;
 use Helper;
+use PRedis;
 
 class DemoController extends Controller
 {
@@ -161,8 +162,8 @@ class DemoController extends Controller
     public function getMyredis()
     {
         $redis = Helper::redis();
-        $redis->set('1111', 111);
-        dump($redis->keys('*'));
+        $redis->set('1111', 111, 60);
+        dump(PRedis::keys('*'));
     }
 
     public function getJobs()
