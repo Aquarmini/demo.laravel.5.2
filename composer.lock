@@ -553,16 +553,16 @@
         },
         {
             "name": "limingxinleo/limx-func",
-            "version": "2.0.4",
+            "version": "2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/limingxinleo/limx-func.git",
-                "reference": "c795d92961936376438fd2356c7dd88b3c899dce"
+                "reference": "661f937255374472f28740f8b63265a128d6b880"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/limingxinleo/limx-func/zipball/c795d92961936376438fd2356c7dd88b3c899dce",
-                "reference": "c795d92961936376438fd2356c7dd88b3c899dce",
+                "url": "https://api.github.com/repos/limingxinleo/limx-func/zipball/661f937255374472f28740f8b63265a128d6b880",
+                "reference": "661f937255374472f28740f8b63265a128d6b880",
                 "shasum": ""
             },
             "require": {
@@ -582,7 +582,7 @@
                 "MIT"
             ],
             "description": "there are some functions",
-            "time": "2016-09-26 10:57:33"
+            "time": "2016-10-20 07:39:05"
         },
         {
             "name": "limingxinleo/limx-geetest",

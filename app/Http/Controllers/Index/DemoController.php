@@ -172,4 +172,14 @@ class DemoController extends Controller
         $res = $job->add();
     }
 
+    public function getArrget()
+    {
+        $config = [
+            'aa' => ['bb' => ['c' => 'hello world']],
+        ];
+
+        dump($config);
+        dump(\limx\func\Arr::get('aa.bb.c', $config));
+    }
+
 }

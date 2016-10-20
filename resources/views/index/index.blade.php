@@ -56,6 +56,8 @@
             <a class="btn btn-default" href="/index/demo/mypdo">测试MyPDO的事务</a>
             <a class="btn btn-default" href="/index/demo/myredis">测试MyRedis</a>
             <a class="btn btn-default" href="/index/demo/jobs">测试 Jobs</a>
+            <a class="btn btn-default" href="/index/demo/arrget">获取数组某一项的值</a>
+
         </div>
     </div>
 @endsection
