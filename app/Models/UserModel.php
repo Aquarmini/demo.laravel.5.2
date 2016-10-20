@@ -31,4 +31,10 @@ class UserModel extends BaseModel
     {
         return $this->belongsToMany('App\Models\TitleModel', 'user_title', 'uid', 'title_id');
     }
+
+    // Dynamic Scopes
+    public function scopeOfRole($query, $role)
+    {
+        return $query->where('role_id', $role);
+    }
 }

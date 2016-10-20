@@ -184,4 +184,10 @@ class IndexController extends Controller
         echo 1;
     }
 
+    public function getScope()
+    {
+        $user = UserModel::ofRole(1)->first();
+        dump($user);
+    }
+
 }

@@ -32,6 +32,7 @@
             <a class="btn btn-default" href="/index/index/insert">数据库insert if not exists</a>
             <a class="btn btn-default" href="/index/index/command">自定义新建Service服务</a>
             <a class="btn btn-default" href="/index/index/provider">Providers</a>
+            <a class="btn btn-default" href="/index/index/scope">Query Scope</a>
         </div>
         <div class="col-md-12">
             <h3>模型关系测试</h3>
