@@ -33,6 +33,8 @@
             <a class="btn btn-default" href="/index/index/command">自定义新建Service服务</a>
             <a class="btn btn-default" href="/index/index/provider">Providers</a>
             <a class="btn btn-default" href="/index/index/scope">Query Scope</a>
+            <a class="btn btn-default" href="/index/index/distinct">DB Distinct</a>
+
         </div>
         <div class="col-md-12">
             <h3>模型关系测试</h3>
@@ -57,6 +59,7 @@
             <a class="btn btn-default" href="/index/demo/myredis">测试MyRedis</a>
             <a class="btn btn-default" href="/index/demo/jobs">测试 Jobs</a>
             <a class="btn btn-default" href="/index/demo/arrget">获取数组某一项的值</a>
+
 
         </div>
     </div>

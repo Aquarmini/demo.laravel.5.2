@@ -190,4 +190,12 @@ class IndexController extends Controller
         dump($user);
     }
 
+    public function getDistinct()
+    {
+        $user = DB::table('user')->count();
+        dump($user);
+        $user = DB::table('user')->distinct()->count('name');
+        dump($user);
+    }
+
 }
