@@ -105,4 +105,19 @@ class RelationController extends Controller
         $book = RoleModel::find(1)->books;
         dump($book);
     }
+
+    public function getEager()
+    {
+        $users = UserModel::where('id', '<', 10)->get();
+        dump($users);
+        foreach ($users as $user) {
+            echo $user->role->name . " ";
+        }
+        echo "\n";
+        $users2 = UserModel::with('role')->where('id', '<', 10)->get();
+        dump($users2);
+        foreach ($users2 as $user) {
+            echo $user->role->name . " ";
+        }
+    }
 }

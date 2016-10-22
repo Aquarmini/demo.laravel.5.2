@@ -46,6 +46,7 @@
             <a class="btn btn-default" href="/index/relation/titleuser">(nn)查询某TITLE的USER</a>
             <a class="btn btn-default" href="/index/relation/userbook">(1n)查询某USER的BOOK</a>
             <a class="btn btn-default" href="/index/relation/rolebook">(1nn)查询某ROLE的BOOK</a>
+            <a class="btn btn-default" href="/index/relation/eager">Eager Loading</a>
         </div>
         <div class="col-md-12">
             <h3>其他测试</h3>
