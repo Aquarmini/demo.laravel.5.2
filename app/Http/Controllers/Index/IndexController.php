@@ -16,6 +16,7 @@ use App\Jobs\MyJobTest;
 use App\Models\UserModel;
 use Illuminate\Http\Request;
 use DB;
+use Hash;
 
 class IndexController extends Controller
 {
@@ -196,6 +197,17 @@ class IndexController extends Controller
         dump($user);
         $user = DB::table('user')->distinct()->count('name');
         dump($user);
+    }
+
+    public function getHash()
+    {
+        $key = 'hello world';
+        $pss = Hash::make($key);
+        dump($pss);
+        $pss2 = '$2y$10$H13qNRVlbd/BtA4uWzwdT.AFJj2fG2Y2aBl3E0f2TulL29sdNTM/S';
+        dump(Hash::check($key, $pss));
+        dump(Hash::check($key, $pss2));
+
     }
 
 }

@@ -34,6 +34,7 @@
             <a class="btn btn-default" href="/index/index/provider">Providers</a>
             <a class="btn btn-default" href="/index/index/scope">Query Scope</a>
             <a class="btn btn-default" href="/index/index/distinct">DB Distinct</a>
+            <a class="btn btn-default" href="/index/index/hash">Hash</a>
 
         </div>
         <div class="col-md-12">
