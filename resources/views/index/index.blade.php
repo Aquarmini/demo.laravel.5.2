@@ -2,6 +2,11 @@
 @section('content')
     <div class="row">
         <div class="col-md-12">
+            <h3>文章</h3>
+            <a class="btn btn-default" href="/index/doc/index">收集的文章</a>
+            <a class="btn btn-default" href="/index/doc/lnmp7">centos lnmp7</a>
+        </div>
+        <div class="col-md-12">
             <h3>Laravel基础测试</h3>
             <a class="btn btn-default" href="/index/index/phpinfo">phpinfo</a>
             <a class="btn btn-default" href="/index/index/index">第一个程序</a>
@@ -38,7 +43,7 @@
 
         </div>
         <div class="col-md-12">
-            <h3>模型关系测试</h3>
+            <h3>Laravel模型关系测试</h3>
             <a class="btn btn-default" href="/index/relation/index">初始化</a>
             <a class="btn btn-default" href="/index/relation/roleuser">(1n)查询某ROLE下所有USER</a>
             <a class="btn btn-default" href="/index/relation/userrole">(n1)查询某USER的ROLE</a>

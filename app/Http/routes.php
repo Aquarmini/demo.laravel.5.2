@@ -19,6 +19,8 @@ Route::group(['namespace' => 'Index', 'prefix' => 'index'], function () {
         return view('index.index');
     }]);
     Route::controller('index', 'IndexController');
+    Route::controller('doc', 'DocController');
+
     Route::group(['middleware' => 'demo'], function () {
         Route::controller('demo', 'DemoController');
         Route::controller('user', 'UserController');
