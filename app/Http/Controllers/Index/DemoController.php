@@ -182,4 +182,14 @@ class DemoController extends Controller
         dump(\limx\func\Arr::get('aa.bb.c', $config));
     }
 
+    public function getGetarr()
+    {
+        $url = 'http://laravel.tp5.lmx0536.cn/api/params';
+        dump($url);
+        $params = ['k1' => 'v1', 'ke' => 'v2'];
+        dump($params);
+        echo "结果\n";
+        echo \limx\func\Curl::getArr($url, $params);
+    }
+
 }

@@ -31,4 +31,5 @@ Route::group(['namespace' => 'Index', 'prefix' => 'index'], function () {
 
 Route::group(['namespace' => 'Api', 'prefix' => 'api'], function () {
     Route::get('jobs', 'IndexController@insJobTest');
+    Route::get('params', 'IndexController@showParams');
 });

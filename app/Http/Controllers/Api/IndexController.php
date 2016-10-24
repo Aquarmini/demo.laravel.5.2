@@ -23,4 +23,11 @@ class IndexController extends Controller
         $job = new MyJobTest();
         $this->dispatch($job);
     }
+
+    public function showParams()
+    {
+        dump(request()->url());
+        $params = request()->input();
+        dump($params);
+    }
 }
