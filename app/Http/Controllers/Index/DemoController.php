@@ -192,4 +192,17 @@ class DemoController extends Controller
         echo \limx\func\Curl::getArr($url, $params);
     }
 
+    public function getDel()
+    {
+        $redis = Helper::redis();
+        $redis->set('1', 1);
+        $redis->set('2', 1);
+        $redis->set('3', 1);
+
+        $res = $redis->keys('*');
+        dump($res);
+        $redis->delete($res);
+        dump($redis->keys('*'));
+    }
+
 }
