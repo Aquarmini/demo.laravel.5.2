@@ -22,11 +22,12 @@ Route::group(['namespace' => 'Index', 'prefix' => 'index'], function () {
     Route::controller('doc', 'DocController');
 
     Route::group(['middleware' => 'demo'], function () {
-        Route::controller('demo', 'DemoController');
         Route::controller('user', 'UserController');
+        Route::controller('relation', 'RelationController');
 //        Route::resource('user', 'UserController');//不好用
     });
-    Route::controller('relation', 'RelationController');
+    Route::controller('demo', 'DemoController');
+
 });
 
 Route::group(['namespace' => 'Api', 'prefix' => 'api'], function () {
