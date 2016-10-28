@@ -69,6 +69,7 @@
             <a class="btn btn-default" href="/index/demo/getarr">测试getArr函数</a>
             <a class="btn btn-default" href="/index/demo/del">Redis批量删除</a>
             <a class="btn btn-default" href="/index/demo/md5">MD5测试</a>
+            <a class="btn btn-default" href="/index/demo/cookie">COOKIE测试</a>
         </div>
     </div>
 @endsection

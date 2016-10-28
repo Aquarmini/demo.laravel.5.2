@@ -214,4 +214,16 @@ class DemoController extends Controller
         dump(md5($key));
     }
 
+    public function getCookie()
+    {
+        $action = request()->input('action', 'get');
+        if ($action == 'get') {
+            if (!empty($_COOKIE['OPENID'])) {
+                echo $_COOKIE['OPENID'];
+            }
+        } else {
+            setcookie('OPENID', 'limx');
+        }
+    }
+
 }
