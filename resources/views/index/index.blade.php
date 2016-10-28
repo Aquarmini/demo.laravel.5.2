@@ -68,8 +68,7 @@
             <a class="btn btn-default" href="/index/demo/arrget">获取数组某一项的值</a>
             <a class="btn btn-default" href="/index/demo/getarr">测试getArr函数</a>
             <a class="btn btn-default" href="/index/demo/del">Redis批量删除</a>
-
-
+            <a class="btn btn-default" href="/index/demo/md5">MD5测试</a>
         </div>
     </div>
 @endsection

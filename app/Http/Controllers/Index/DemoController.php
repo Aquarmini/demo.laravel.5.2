@@ -205,4 +205,13 @@ class DemoController extends Controller
         dump($redis->keys('*'));
     }
 
+    public function getMd5()
+    {
+        $key = 'hello world!';
+        dump(md5($key));
+
+        $key = 'hello world! 李铭昕';
+        dump(md5($key));
+    }
+
 }
