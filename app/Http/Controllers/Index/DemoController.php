@@ -218,11 +218,11 @@ class DemoController extends Controller
     {
         $action = request()->input('action', 'get');
         if ($action == 'get') {
-            if (!empty($_COOKIE['OPENID'])) {
-                echo $_COOKIE['OPENID'];
+            if (!empty($_COOKIE['COOKIE_KEY'])) {
+                echo $_COOKIE['COOKIE_KEY'];
             }
         } else {
-            setcookie('OPENID', 'limx');
+            setcookie('COOKIE_KEY', 'limx', time() + 3600, '/');
         }
     }
 
