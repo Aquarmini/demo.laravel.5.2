@@ -222,7 +222,7 @@ class DemoController extends Controller
                 echo $_COOKIE['COOKIE_KEY'];
             }
         } else {
-            setcookie('COOKIE_KEY', 'limx', time() + 3600, '/');
+            setcookie('COOKIE_KEY', 'limx', time() + 60, '/');
         }
     }
 
