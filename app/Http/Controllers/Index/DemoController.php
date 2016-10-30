@@ -226,4 +226,14 @@ class DemoController extends Controller
         }
     }
 
+    /**
+     * [getYaoyiyao desc]
+     * @desc 摇一摇
+     * @author limx
+     */
+    public function getYaoyiyao()
+    {
+        return view('index.demo.yaoyiyao');
+    }
+
 }
