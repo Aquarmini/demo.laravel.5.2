@@ -10,6 +10,7 @@ use App\Http\Controllers\Controller;
 use Ajax;
 use Helper;
 use PRedis;
+use DB;
 
 class DemoController extends Controller
 {
@@ -234,6 +235,20 @@ class DemoController extends Controller
     public function getYaoyiyao()
     {
         return view('index.demo.yaoyiyao');
+    }
+
+    public function getUps()
+    {
+        dump("创建存储过程");
+        dump("CREATE PROCEDURE getUserName( IN `in_name` VARCHAR(255))
+BEGIN
+SET @update_id := 0;
+UPDATE `user` SET `name` = 'limx', `username` = (SELECT @update_id := username)
+WHERE `name` = in_name LIMIT 1;
+SELECT @update_id AS `username`;
+END;");
+        $res = DB::select("CALL getUserName(?)", ['']);
+        dump($res);
     }
 
 }
