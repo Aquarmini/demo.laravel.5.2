@@ -251,4 +251,12 @@ END;");
         dump($res);
     }
 
+    public function getBuquan()
+    {
+        $value = date('d');
+        //將數字由左邊補零至三位數
+        $value = str_pad($value, 9, '*', STR_PAD_LEFT);
+        echo $value;
+    }
+
 }

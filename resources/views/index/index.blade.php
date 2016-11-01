@@ -72,6 +72,7 @@
             <a class="btn btn-default" href="/index/demo/cookie">COOKIE测试</a>
             <a class="btn btn-default" href="/index/demo/yaoyiyao">H5摇一摇</a>
             <a class="btn btn-default" href="/index/demo/ups">update的同时查出表主键</a>
+            <a class="btn btn-default" href="/index/demo/buquan">php 补全函数</a>
 
         </div>
     </div>
