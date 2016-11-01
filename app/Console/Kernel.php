@@ -20,6 +20,7 @@ class Kernel extends ConsoleKernel
         Commands\CreateHelperCommand::class,
         Commands\CreateWidgetCommand::class,
         Commands\CreateServiceCommand::class,
+        Commands\TestCommand::class,
     ];
 
     /**
