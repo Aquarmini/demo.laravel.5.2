@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use DB;
 
 class RelationController extends Controller
 {
@@ -130,5 +131,17 @@ class RelationController extends Controller
                 $v->load('book');
             dump($v);
         }
+    }
+
+    public function getMostbookuser()
+    {
+        $sql = "SELECT u.*,count(b.id) as booknum FROM `user` as u
+            LEFT JOIN `book` as b on u.id = b.uid
+            GROUP BY u.id
+            ORDER BY booknum DESC
+            LIMIT 0,10;";
+        $res = DB::select($sql);
+        dump($res);
+        dump($res[0]->id);
     }
 }

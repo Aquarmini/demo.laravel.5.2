@@ -53,6 +53,7 @@
             <a class="btn btn-default" href="/index/relation/rolebook">(1nn)查询某ROLE的BOOK</a>
             <a class="btn btn-default" href="/index/relation/eager">Eager Loading</a>
             <a class="btn btn-default" href="/index/relation/load">Lazy Eager Loading</a>
+            <a class="btn btn-default" href="/index/relation/mostbookuser">查询拥有BOOK最多的10个USER</a>
         </div>
         <div class="col-md-12">
             <h3>其他测试</h3>
