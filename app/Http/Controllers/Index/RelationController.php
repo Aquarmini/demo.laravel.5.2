@@ -120,4 +120,15 @@ class RelationController extends Controller
             echo $user->role->name . " ";
         }
     }
+
+    public function getLoad()
+    {
+        $user = UserModel::take(2)->get();
+        $is = 0;
+        foreach ($user as $i => $v) {
+            if ($is++)
+                $v->load('book');
+            dump($v);
+        }
+    }
 }
