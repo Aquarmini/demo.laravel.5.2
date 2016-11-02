@@ -279,4 +279,20 @@ END;");
         dump($res);
     }
 
+    public function getXss()
+    {
+        $data['xss'] = '';
+        if (request()->input('xss')) {
+            $data['xss'] = request()->input('xss');
+        }
+        return view('index.demo.xss', $data);
+    }
+
+    public function postXss()
+    {
+        $xss = request()->input('xss');
+        $xss = e($xss);
+        $data['xss'] = $xss;
+        return Ajax::success($data);
+    }
 }

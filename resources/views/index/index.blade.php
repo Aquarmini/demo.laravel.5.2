@@ -77,6 +77,7 @@
             <a class="btn btn-default" href="/index/demo/buquan">php 补全函数</a>
             <a class="btn btn-default" href="/index/demo/xiaoxi">执行消息队列</a>
             <a class="btn btn-default" href="/index/demo/object">object</a>
+            <a class="btn btn-default" href="/index/demo/xss">xss</a>
 
         </div>
     </div>
