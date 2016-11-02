@@ -259,4 +259,9 @@ END;");
         echo $value;
     }
 
+    public function getXiaoxi()
+    {
+        system('/usr/local/php/bin/php /_html/html/tp5/laravel/artisan queue:work --daemon');
+    }
+
 }

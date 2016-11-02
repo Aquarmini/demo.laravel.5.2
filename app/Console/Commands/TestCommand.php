@@ -12,7 +12,7 @@ class TestCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'test:queue';
+    protected $signature = 'test:test {action : the action}';
 
     /**
      * The console command description.
@@ -38,9 +38,21 @@ class TestCommand extends Command
      */
     public function handle()
     {
-        for ($i = 1; $i < 1000; $i++) {
-            $job = new MyJobTest(date("Y-m-d H:i:s"));
-            dispatch($job);
+        $action = $this->argument('action');
+        switch ($action) {
+            case 'queue':
+                for ($i = 1; $i < 1000; $i++) {
+                    $job = new MyJobTest(date("Y-m-d H:i:s"));
+                    dispatch($job);
+                }
+                break;
+            case 'start-queue':
+                system('php /_html/html/tp5/laravel/artisan queue:work --daemon');
+                break;
+            case 'end-queue':
+                system('php /_html/html/tp5/laravel/artisan queue:restart');
+                break;
         }
+
     }
 }

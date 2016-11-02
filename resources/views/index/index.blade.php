@@ -73,6 +73,7 @@
             <a class="btn btn-default" href="/index/demo/yaoyiyao">H5摇一摇</a>
             <a class="btn btn-default" href="/index/demo/ups">update的同时查出表主键</a>
             <a class="btn btn-default" href="/index/demo/buquan">php 补全函数</a>
+            <a class="btn btn-default" href="/index/demo/xiaoxi">执行消息队列</a>
 
         </div>
     </div>
