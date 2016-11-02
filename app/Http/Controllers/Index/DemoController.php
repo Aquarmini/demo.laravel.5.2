@@ -264,4 +264,19 @@ END;");
         system('/usr/local/php/bin/php /_html/html/tp5/laravel/artisan queue:work --daemon');
     }
 
+    public function getObject()
+    {
+        $M = new \stdClass();
+        dump($M);
+        $M->test = 'test';
+        $M->time = time();
+        dump($M);
+
+        $res = [
+            'test' => 'test',
+            'time' => time()
+        ];
+        dump($res);
+    }
+
 }
