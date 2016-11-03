@@ -12,6 +12,7 @@ use Helper;
 use PRedis;
 use DB;
 use limx\tools\wx\OAuth;
+use limx\tools\wx\JsSdk;
 
 class DemoController extends Controller
 {
@@ -329,5 +330,21 @@ END;");
         $res = $api->getUserInfo();
         dump($res);
 
+    }
+
+    public function getTixr()
+    {
+        $appid = env('APPID');
+        $appsec = env('APPSECRET');
+        $jssdk = new JsSdk($appid, $appsec);
+        /** @var 设置TOKEN缓存地址 token_path */
+        $jssdk->setTokenPath(storage_path('wx/token.php'));
+        /** @var 设置票据缓存地址 ticket_path */
+        $jssdk->setTicketPath(storage_path('wx/ticket.php'));
+        /** @var 获得签名数据包 $signPackage */
+        $signPackage = $jssdk->GetSignPackage();
+        view()->share('signPackage', $signPackage);
+
+        return view('index.demo.tixr');
     }
 }
