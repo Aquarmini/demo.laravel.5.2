@@ -33,4 +33,10 @@ class HelperService
 
         return \limx\tools\MyRedis::getInstance($config);
     }
+
+    public function wxRedirectUri($path)
+    {
+        $url = env('WX_REDIRECT_URI', 'http://laravel.tp5.lmx0536.cn/');
+        return $url . $path;
+    }
 }

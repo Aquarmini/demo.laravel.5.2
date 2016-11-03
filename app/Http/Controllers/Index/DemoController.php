@@ -11,6 +11,7 @@ use Ajax;
 use Helper;
 use PRedis;
 use DB;
+use limx\tools\wx\OAuth;
 
 class DemoController extends Controller
 {
@@ -313,5 +314,20 @@ END;");
             echo $v->name . ",";
         }
         echo "\n";
+    }
+
+    public function getWx()
+    {
+        $path = request()->path();
+        $code = request()->input('code');
+        $appid = env('APPID');
+        $appsec = env('APPSECRET');
+        $api = new OAuth($appid, $appsec);
+        $api->code = $code;// 微信官方回调回来后 会携带code
+        $url = Helper::wxRedirectUri($path);//当前的URL
+        $api->setRedirectUrl($url);
+        $res = $api->getUserInfo();
+        dump($res);
+
     }
 }
