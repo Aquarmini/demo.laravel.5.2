@@ -352,4 +352,9 @@ END;");
     {
         return view('index.demo.ngdaili');
     }
+
+    public function getRedisdel()
+    {
+        dump("redis-cli -a password -n 1 keys \"*\" | xargs redis-cli -a password -n 1 del");
+    }
 }
