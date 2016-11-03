@@ -78,6 +78,7 @@
             <a class="btn btn-default" href="/index/demo/xiaoxi">执行消息队列</a>
             <a class="btn btn-default" href="/index/demo/object">object</a>
             <a class="btn btn-default" href="/index/demo/xss">xss</a>
+            <a class="btn btn-default" href="/index/demo/rand">Mysql rand()</a>
 
         </div>
     </div>

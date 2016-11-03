@@ -295,4 +295,23 @@ END;");
         $data['xss'] = $xss;
         return Ajax::success($data);
     }
+
+    public function getRand()
+    {
+        $sql = "SELECT id,`name` FROM `user`;";
+        $res = DB::select($sql);
+        foreach ($res as $i => $v) {
+            echo $v->name . ",";
+        }
+        echo "\n";
+        $sql = "UPDATE `user` SET `name` = CEILING(RAND()*10000+1);";
+        $res = DB::update($sql);
+        dump($res);
+        $sql = "SELECT id,`name` FROM `user`;";
+        $res = DB::select($sql);
+        foreach ($res as $i => $v) {
+            echo $v->name . ",";
+        }
+        echo "\n";
+    }
 }
