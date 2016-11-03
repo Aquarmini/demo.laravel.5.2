@@ -7,6 +7,7 @@
         'resources',
         'database',
         'config',
+        'public/app',
     ],
     // 复制后的文件地址
     // 样例地址 E:\phpStudy\WWW\zips\laravel

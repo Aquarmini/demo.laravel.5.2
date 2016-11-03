@@ -19,5 +19,8 @@
     </code>
     <p>查看图片路径</p>
     <img src="/app/images/erweima.png" alt="">
+    <p>结论：</p>
+    <p>nginx重写对静态文件、路径等都没有影响。因为会跳转到自己的页面里</p>
+    <p>nginx代理因为链接没有被重写，所以静态文件、跳转路径都要改成代理前的路径规则</p>
 
 @endsection
