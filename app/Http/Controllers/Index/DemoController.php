@@ -347,4 +347,9 @@ END;");
 
         return view('index.demo.tixr');
     }
+
+    public function getNgdaili()
+    {
+        return view('index.demo.ngdaili');
+    }
 }

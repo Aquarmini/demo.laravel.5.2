@@ -81,6 +81,7 @@
             <a class="btn btn-default" href="/index/demo/rand">Mysql rand()</a>
             <a class="btn btn-default" href="/index/demo/wx">微信公众号 授权测试</a>
             <a class="btn btn-default" href="/index/demo/tixr">数据提前渲染</a>
+            <a class="btn btn-default" href="/index/demo/ngdaili">Nginx 代理</a>
 
         </div>
     </div>
