@@ -17,7 +17,8 @@
         "limingxinleo/limx-package": "^1.0",
         "limingxinleo/limx-redis": "dev-master",
         "predis/predis": "~1.0",
-        "limingxinleo/wx-api": "^1.1"
+        "limingxinleo/wx-api": "^1.1",
+        "limingxinleo/limx-func": "^2.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -59,9 +60,9 @@
         "preferred-install": "dist"
     },
     "repositories": {
-        "packagist":{
-            "type":"composer",
-            "url":"https://packagist.phpcomposer.com"
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
         }
     }
 }
