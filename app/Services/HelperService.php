@@ -38,6 +38,15 @@ class HelperService
         return \limx\tools\MyPDO::getInstance($config);
     }
 
+    public function sqlite($dbname = '')
+    {
+        $dbname = empty($dbname) ? env('DB_DATABASE', 'test') : $dbname;
+        $config['type'] = 'sqlite';
+        $config['dbname'] = database_path('sqlite/' . $dbname . '.sqlite');
+
+        return \limx\tools\MyPDO::getInstance($config);
+    }
+
     public function redis()
     {
         $config['host'] = env('REDIS_HOST', '127.0.0.1');

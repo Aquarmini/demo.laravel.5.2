@@ -368,4 +368,20 @@ END;");
         $res = $mysql->query("SELECT COUNT(0) AS count FROM `tb_admin`");
         dump($res[0]['count']);
     }
+
+    public function getSqlite()
+    {
+        $sqlite = Helper::sqlite();
+        $sql = "CREATE TABLE IF NOT EXISTS messages (
+                    id INTEGER PRIMARY KEY,
+                    title TEXT,
+                    message TEXT,
+                    time INTEGER)";
+        $sqlite->execute($sql);
+        $insert = "INSERT INTO messages (title, message, time) VALUES (?, ?, ?)";
+        $sqlite->execute($insert, ['t1', 'm1', time()]);
+        $sqlite->execute($insert, ['t2', 'm2', time()]);
+        $sqlite->execute($insert, ['t3', 'm3', time()]);
+        dump($sqlite->query("SELECT * FROM messages LIMIT 0,5;"));
+    }
 }
