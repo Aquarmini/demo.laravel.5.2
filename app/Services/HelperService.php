@@ -25,6 +25,19 @@ class HelperService
         return \limx\tools\MyPDO::getInstance($config);
     }
 
+    public function mysql($dbname = '')
+    {
+        $config['host'] = 'mysql';
+        $config['host'] = env('DB_HOST', '127.0.0.1');
+        $config['user'] = env('DB_USERNAME', 'root');
+        $config['pwd'] = env('DB_PASSWORD', '');
+        $config['dbname'] = empty($dbname) ? env('DB_DATABASE', 'test') : $dbname;
+        $config['host'] = env('DB_HOST', '127.0.0.1');
+        $config['charset'] = 'utf8';
+
+        return \limx\tools\MyPDO::getInstance($config);
+    }
+
     public function redis()
     {
         $config['host'] = env('REDIS_HOST', '127.0.0.1');

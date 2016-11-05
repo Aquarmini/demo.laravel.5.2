@@ -357,4 +357,15 @@ END;");
     {
         dump("redis-cli -a password -n 1 keys \"*\" | xargs redis-cli -a password -n 1 del");
     }
+
+    public function getPdo2()
+    {
+        $mysql = Helper::mysql();
+        $res = $mysql->query("SELECT COUNT(0) AS count FROM `user`");
+        dump($res[0]['count']);
+
+        $mysql = Helper::mysql('my_admin');
+        $res = $mysql->query("SELECT COUNT(0) AS count FROM `tb_admin`");
+        dump($res[0]['count']);
+    }
 }
