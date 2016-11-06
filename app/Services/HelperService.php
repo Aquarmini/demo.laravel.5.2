@@ -27,7 +27,7 @@ class HelperService
 
     public function mysql($dbname = '')
     {
-        $config['host'] = 'mysql';
+        $config['type'] = 'mysql';
         $config['host'] = env('DB_HOST', '127.0.0.1');
         $config['user'] = env('DB_USERNAME', 'root');
         $config['pwd'] = env('DB_PASSWORD', '');
