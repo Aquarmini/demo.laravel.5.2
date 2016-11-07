@@ -27,6 +27,7 @@ Route::group(['namespace' => 'Index', 'prefix' => 'index'], function () {
 //        Route::resource('user', 'UserController');//不好用
     });
     Route::controller('demo', 'DemoController');
+    Route::controller('server_dispatch', 'ServerDispatchController');
 
 });
 

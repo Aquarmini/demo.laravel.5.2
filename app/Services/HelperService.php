@@ -47,13 +47,16 @@ class HelperService
         return \limx\tools\MyPDO::getInstance($config);
     }
 
-    public function redis()
+    public function redis($db = 0)
     {
         $config['host'] = env('REDIS_HOST', '127.0.0.1');
         $config['auth'] = env('REDIS_PASSWORD', '');
         $config['port'] = env('REDIS_PORT', '6379');
+        $config['database'] = $db;
 
-        return \limx\tools\MyRedis::getInstance($config);
+        $redis = \limx\tools\MyRedis::getInstance($config);
+        $redis->setPrefix('laravel:');
+        return $redis;
     }
 
     public function wxRedirectUri($path)

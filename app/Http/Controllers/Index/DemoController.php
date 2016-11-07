@@ -384,4 +384,9 @@ END;");
         $sqlite->execute($insert, ['t3', 'm3', time()]);
         dump($sqlite->query("SELECT * FROM messages LIMIT 0,5;"));
     }
+
+    public function getChatdispatch()
+    {
+        return view('index.demo.chat');
+    }
 }
