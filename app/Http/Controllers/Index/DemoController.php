@@ -13,6 +13,7 @@ use PRedis;
 use DB;
 use limx\tools\wx\OAuth;
 use limx\tools\wx\JsSdk;
+use limx\func\Image;
 
 class DemoController extends Controller
 {
@@ -389,4 +390,14 @@ END;");
     {
         return view('index.demo.chat');
     }
+
+    public function getImagesize()
+    {
+        $img = 'http://test.haoyidao.cc/public/upload/avatar/20160907/05265274641593491.png';
+        $res = Image::imageSize($img);
+//        $img = 'app/images/erweima.png';
+//        $res = Image::imageSize($img, 'fread', true);
+        dump($res);
+    }
+
 }

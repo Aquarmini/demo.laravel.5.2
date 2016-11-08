@@ -86,6 +86,7 @@
             <a class="btn btn-default" href="/index/demo/pdo2">MyPDO 查询不同的两个库</a>
             <a class="btn btn-default" href="/index/demo/sqlite">SqLite 测试</a>
             <a class="btn btn-default" href="/index/server_dispatch/index">ChatServer 分配</a>
+            <a class="btn btn-default" href="/index/demo/imagesize">获取远程图片大小</a>
 
         </div>
     </div>
