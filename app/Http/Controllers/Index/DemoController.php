@@ -400,4 +400,16 @@ END;");
         dump($res);
     }
 
+    public function getFormarr()
+    {
+        return view('index.demo.formarr');
+    }
+
+    public function postFormarr()
+    {
+        dump(request()->input());
+        $res = request()->input('key');
+        dump($res[1]);
+    }
+
 }
